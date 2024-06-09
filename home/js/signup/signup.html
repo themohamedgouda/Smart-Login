@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Registration</title>
+</head>
+<body>
+    <form id="signUpForm">
+        <div class="parent vh-100 py-5">
+            <div class="container-fluid p-5 w-50 ">  
+                <div class="main-content text-center shadow-lg p-5" id="formData">
+                    <h1 class="pb-4">Smart Login System</h1>
+                    <input id="nameInput"   type="text" placeholder="Enter Your Name" class="form-control  text-white mb-3">
+                    <div id="nameAlert" class="alert alert-danger d-none py-1" role="alert">Name must be at least two characters long</div>
+                    <input id="emailInput"   type="text" placeholder="Enter Your Email" class="form-control  text-white mb-3">
+                    <div id="emailAlert" class="alert alert-danger d-none py-1" role="alert">Please enter a valid email address</div>
+                    <div id="exitAlert" class="alert alert-danger d-none py-1" role="alert">This email address is already in use.</div>
+                    <input id="passwordInput" type="password" placeholder="Enter Your Password" class="form-control text-white mb-4">
+                    <div id="passwordAlert" class="alert alert-danger d-none py-1" role="alert">Password must be minimum 8 characters, with at least one uppercase letter and one special character.</div>
+                    <div id="successAlert" class="alert alert-success d-none py-1" role="alert">Registration successful! You can now log in.</div>
+                    <button type="submit" class="btn btn-outline-info btn-hover w-100" id="signUpBtn">Sign Up</button>
+                    <p class="text-white mt-2">Don’t have an account? 
+                    <a href="../index.html" class=" sign-up-hover" id="sign-Up">Login in</a></p>
+                </div>
+         </div>
+        </div>
+    </form>
+ <script src="./js/index.js"></script>
+</body>
+</html>

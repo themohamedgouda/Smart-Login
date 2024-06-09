@@ -1,0 +1,43 @@
+:root{
+    --main-color : #17a2b8;
+    --bs-body-bg: #24353f;
+}
+main{
+    width: 100vh;
+}
+.parent h1{
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+.parent{
+    background-color:var(--second-color) !important ;
+}
+
+.main-content{
+    background-color:var(--bs-body-bg) !important ;
+}
+.main-content ::placeholder {
+    color: #ced4da !important;
+  }
+.main-content input{
+    background-color:var(--bs-body-bg) !important;
+
+}
+.main-content .form-control:focus{
+    box-shadow: none !important;
+}
+.btn-hover{
+    --bs-btn-hover-bg:#17a2b8;
+    border-color: var(--main-color) !important;
+}
+.btn-hover:hover{
+    color: black ;
+}
+.sign-up-hover{
+    text-decoration: none;
+    color: #fff;
+}
+.sign-up-hover:hover{
+    color: #17a2b8 ;
+    text-decoration: underline ;
+}
